@@ -51,7 +51,7 @@ Memory-first, adult-native: a map of your friend group's life, not teen surveill
 
 ## Stack (confirmed with Elliott — never assumed)
 - Platform: iOS-first, native (confirmed 2026-09-20)
-- Stack: SwiftUI + MapKit + CoreLocation; backend PROPOSED (awaiting Elliott's confirm): Firebase — Auth, Firestore, Storage, Cloud Functions + APNs (fastest live-sync + scheduled-push path for a solo builder)
+- Stack: SwiftUI + MapKit + CoreLocation; backend CONFIRMED by Elliott 2026-09-20: Firebase — Auth, Firestore, Storage, Cloud Functions + APNs
 - Hosting / distribution: TestFlight for the friend-group beta
 
 ## Status snapshot
