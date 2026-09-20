@@ -1,0 +1,20 @@
+# macOS
+.DS_Store
+
+# Xcode
+xcuserdata/
+DerivedData/
+*.xcuserstate
+*.xcscmblueprint
+
+# Firebase secrets/config — each machine downloads its own from the console
+# (see SETUP.md). Not strictly secret, but kept out of git by convention.
+GoogleService-Info.plist
+
+# Firebase CLI
+.firebase/
+firebase-debug.log
+*-debug.log
+
+# Node
+functions/node_modules/

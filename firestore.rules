@@ -1,0 +1,19 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Slice 1: one hardcoded group — every authenticated user IS a group
+    // member. Any signed-in member can read everyone; each user can write
+    // only their own doc. Tighten to an invite-gated member list when the
+    // group model becomes real (public launch at the latest).
+    match /users/{userId} {
+      allow read: if request.auth != null;
+      allow create, update: if request.auth != null && request.auth.uid == userId;
+      allow delete: if false;
+    }
+
+    // Everything else is locked.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
