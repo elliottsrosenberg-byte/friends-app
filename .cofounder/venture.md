@@ -10,13 +10,17 @@ The fun version of Find My: a social location app for friend groups — FindMy/S
 - ICP (be narrow): Elliott's own friend group first — iPhone-carrying friends who already share Find My locations with each other. Founding beta = real friends, real density.
 - Where they are today (the alternative they'd switch from): Apple Find My (built into iMessage — Apple's distribution advantage), Snap Map inside Snapchat, Life360 (family-skewed utility).
 
-## Product direction (affirmed by Elliott 2026-09-20)
-Memory-first, adult-native: a map of your friend group's life, not teen surveillance. Analog/real-photo sensibility (Retro is the reference for what 22–30s want); "location-based Snapchat at times," never public reviews. Candidate core loop: the **daily map moment** — at a synced time everyone posts a photo of where they are, rendered as a map view (BeReal mechanic × map canvas); each day's moment auto-builds the time-travel archive.
+## Product direction (decided by Elliott 2026-09-20)
+Memory-first, adult-native: a map of your friend group's life, not teen surveillance. Analog/real-photo sensibility (Retro is the reference for what 22–30s want); private to the group, never public reviews.
+- Core frame: **creating and sharing memories.** Creating = connecting with friends, seeing where they are for the fun of it, windows into each other's lives. Sharing = @-location posting, the daily memory.
+- Core loop: the **daily map moment** — at a synced time everyone posts a photo of where they are, rendered as a map view (BeReal mechanic × map canvas); each day's moment auto-builds the time-travel archive.
+- Always-on live map is retained (Elliott: important, part of the app) — it's what you land in outside moment time; the ambient "windows into lives" layer.
 
 ## Feature hypotheses (pruned by strategy validation, 2026-09-20 — details in departments/strategy.md)
 - Fun-first UI (anti-utility) — validated by prior art (Zenly, whoo, Jagat) but now table stakes in the category; foundation, not differentiator
 - Spying ping (who checked your location) — KEEP, MVP, **hero feature** (deep-dive 2026-09-20): the only MVP feature Apple won't copy and the only in-category feature with demonstrated willingness-to-pay (whoo charges ¥390/mo for it)
-- Invisibility windows — KEEP, MVP: the trust feature that makes Always-on tolerable — but being commoditized: Apple ships custom-duration + pause-sharing in Find My fall 2026; trust table stakes, not differentiation
+- Invisibility windows — CUT from MVP (scope v2, 2026-09-20): Apple ships custom-duration + pause-sharing in Find My fall 2026; friends-only beta has baseline trust; a global share on/off toggle is the MVP floor. Revisit at public launch
+- Daily map moment (BeReal × map) — NEW, MVP core loop: synced daily photo-at-location on a shared map, auto-building the archive; the adult-native ritual that earns the Always-on grant
 - "Time travel" — RESHAPED: self-only history first (Zenly Footprints precedent); friend-history later, per-friend consent-gated (Life360 precedent)
 - Smart friend insights from location patterns — CUT from MVP: no successful precedent in category, privacy-heavy (stays on Later list)
 
@@ -36,10 +40,10 @@ Memory-first, adult-native: a map of your friend group's life, not teen surveill
 - Pricing (hypothesis + as-of 2026-09-20): free during validation — social density before dollars; monetization decided once sticky.
 - Value metric: TBD (likely history depth)
 
-## Current riskiest assumption
-- Assumption: friends who already share via Find My will move location sharing to a separate app AND still be actively sharing in week 4 (switching + post-novelty retention). Set by strategy 2026-09-20; prior art proves the category for teens/Asia, not for this group.
-- Smallest test: TestFlight beta to Elliott's own friend group; MVP = live map + invisibility windows + spying ping only. Ship by 2026-10-20, measure through week 4.
-- Pass/fail threshold (pre-committed): PASS = ≥8 of ~12 invited friends install and grant Always location in week 1, AND ≥50% of installers still have sharing ON and open the app ≥3 days in week 4. Either miss = FAIL.
+## Current riskiest assumption (v2, re-derived for the hybrid — supersedes always-on-only version; details in departments/product.md)
+- Assumption: ~12 post-college friends will install, grant Always-on location, answer the daily map-moment ping, AND still be posting + sharing in week 4 (two loops, measured separately).
+- Smallest test: TestFlight beta to Elliott's own friend group; MVP = daily map moment + archive + ambient live map + who-viewed. Ship by 2026-10-20, measure through week 4.
+- Pass/fail (pre-committed): Week 1 PASS = ≥8 of ~12 install, grant Always, and post ≥1 moment. Week 4 PASS = ≥50% of installers post ≥3 of 7 moments that week AND ≥50% still have sharing ON. Any miss = FAIL. Diagnostic: posting holds/sharing off → ritual is the product; sharing holds/posting dies → the moment was novelty.
 
 ## Current goal
 - Goal: validate the idea against prior art (Zenly, Snap Map, etc.) and get a TestFlight build into the friend group by the deadline.
@@ -47,7 +51,7 @@ Memory-first, adult-native: a map of your friend group's life, not teen surveill
 
 ## Stack (confirmed with Elliott — never assumed)
 - Platform: iOS-first, native (confirmed 2026-09-20)
-- Stack: SwiftUI + MapKit + CoreLocation; backend TBD at MVP scoping (needs live location sync + push)
+- Stack: SwiftUI + MapKit + CoreLocation; backend PROPOSED (awaiting Elliott's confirm): Firebase — Auth, Firestore, Storage, Cloud Functions + APNs (fastest live-sync + scheduled-push path for a solo builder)
 - Hosting / distribution: TestFlight for the friend-group beta
 
 ## Status snapshot

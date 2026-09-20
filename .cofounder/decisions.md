@@ -19,3 +19,7 @@ REVISIT WHEN: Apple ships who-viewed or any social layer in Find My, OR week-4 b
 2026-09-20, DECISION: Product direction is memory-first and adult-native (map of the friend group's life; Retro-style analog sensibility; private to the group, no public reviews); revenue hypothesis is free core + paid time-travel depth, ads only at scale. The daily map moment (BeReal × map) is adopted as a candidate core loop — NOT yet decided as the MVP loop.
 WHY: Elliott affirmed the memory direction; it matches the research finding that the 22–30 wedge must be an adult-native job, and history depth is the best-precedented premium in the category (Life360, whoo).
 REVISIT WHEN: MVP core-loop decision is made (always-on map vs daily map moment), OR beta usage data shows which loop actually retains.
+
+2026-09-20, DECISION: MVP core-loop fork resolved as a hybrid — build the MVP around the daily map moment + archive, with the always-on live map retained as the ambient layer you land in outside moment time. Frame: creating (live map, windows into lives) and sharing (@-location posts, daily memory) memories.
+WHY: Elliott: the moment is the core idea that brings people together, but always-on location is important and stays; the ritual also makes the Always-on grant more palatable than surveillance-first.
+REVISIT WHEN: mvp-scope re-derives the riskiest assumption for the hybrid, OR beta week-4 shows one loop retaining and the other dead weight.
