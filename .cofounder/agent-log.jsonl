@@ -1,0 +1,4 @@
+{"ts":"2026-09-20T16:47:55Z","agent":"strategy","venture":"friends-app","event":"start","brief":"Pipeline smoke test from the dashboard","note":"entry schema assumed: hub agents/strategy.md was not readable in this session"}
+{"ts":"2026-09-20T16:49:30Z","agent":"strategy","venture":"friends-app","event":"done","status":"partial","result":"PARTIAL: venture.md + status.md read OK (stage validating, ship 2026-10-20); hub agents/strategy.md read DENIED by session permissions, so run-log schema here is assumed, not per spec"}
+{"agent":"strategy","event":"start","task":"verification run: read hub strategy spec + roadmap, log per exact schema","ts":"2026-09-20T16:49:34Z"}
+{"agent":"strategy","event":"done","task":"PASS: hub agents/strategy.md + context/roadmap.md readable, venture.md + status.md read, start/done logged per spec schema; no other changes","ts":"2026-09-20T16:49:39Z"}

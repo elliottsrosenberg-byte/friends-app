@@ -15,3 +15,7 @@ REVISIT WHEN: week-4 beta results are in (pass/fail per venture.md threshold), O
 2026-09-20, DECISION: Reaffirm TEST IT after deep-dive (Bump health, category monetization, 22–30 target); promote spying ping to hero feature, demote invisibility windows to trust-table-stakes; ICP sharpened to post-college 22–30 friend groups with an adult-native job, not "teen app with calmer skin."
 WHY: Apple ships native pause/custom-duration sharing fall 2026 (erodes invisibility-window differentiation); whoo's ¥390/mo who-viewed tier is the category's only demonstrated willingness-to-pay; Bump is campus-targeted and pre-revenue, leaving the 22–30 slot empty.
 REVISIT WHEN: Apple ships who-viewed or any social layer in Find My, OR week-4 beta results are in, OR whoo/Jagat/Bump disclose real revenue.
+
+2026-09-20, DECISION: Product direction is memory-first and adult-native (map of the friend group's life; Retro-style analog sensibility; private to the group, no public reviews); revenue hypothesis is free core + paid time-travel depth, ads only at scale. The daily map moment (BeReal × map) is adopted as a candidate core loop — NOT yet decided as the MVP loop.
+WHY: Elliott affirmed the memory direction; it matches the research finding that the 22–30 wedge must be an adult-native job, and history depth is the best-precedented premium in the category (Life360, whoo).
+REVISIT WHEN: MVP core-loop decision is made (always-on map vs daily map moment), OR beta usage data shows which loop actually retains.

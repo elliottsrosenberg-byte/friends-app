@@ -10,6 +10,9 @@ The fun version of Find My: a social location app for friend groups — FindMy/S
 - ICP (be narrow): Elliott's own friend group first — iPhone-carrying friends who already share Find My locations with each other. Founding beta = real friends, real density.
 - Where they are today (the alternative they'd switch from): Apple Find My (built into iMessage — Apple's distribution advantage), Snap Map inside Snapchat, Life360 (family-skewed utility).
 
+## Product direction (affirmed by Elliott 2026-09-20)
+Memory-first, adult-native: a map of your friend group's life, not teen surveillance. Analog/real-photo sensibility (Retro is the reference for what 22–30s want); "location-based Snapchat at times," never public reviews. Candidate core loop: the **daily map moment** — at a synced time everyone posts a photo of where they are, rendered as a map view (BeReal mechanic × map canvas); each day's moment auto-builds the time-travel archive.
+
 ## Feature hypotheses (pruned by strategy validation, 2026-09-20 — details in departments/strategy.md)
 - Fun-first UI (anti-utility) — validated by prior art (Zenly, whoo, Jagat) but now table stakes in the category; foundation, not differentiator
 - Spying ping (who checked your location) — KEEP, MVP, **hero feature** (deep-dive 2026-09-20): the only MVP feature Apple won't copy and the only in-category feature with demonstrated willingness-to-pay (whoo charges ¥390/mo for it)
@@ -28,8 +31,10 @@ The fun version of Find My: a social location app for friend groups — FindMy/S
 
 ## Offer & revenue model
 - Offer: TBD after validation
+- Revenue hypothesis (Elliott, 2026-09-20): free = live map + spying ping + a taste of history; paid = deeper time travel / more features (precedent: Life360 sells history depth, whoo sells who-viewed at ~$2/mo); ads = someday-line only, requires Snap/Life360 scale.
+- Win condition (Elliott, 2026-09-20): a large active user base counts as a win even unpaid — with the Zenly caveat that dead installs are vanity; retention is the bar.
 - Pricing (hypothesis + as-of 2026-09-20): free during validation — social density before dollars; monetization decided once sticky.
-- Value metric: TBD
+- Value metric: TBD (likely history depth)
 
 ## Current riskiest assumption
 - Assumption: friends who already share via Find My will move location sharing to a separate app AND still be actively sharing in week 4 (switching + post-novelty retention). Set by strategy 2026-09-20; prior art proves the category for teens/Asia, not for this group.
