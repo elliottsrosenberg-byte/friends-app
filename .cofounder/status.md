@@ -3,13 +3,12 @@
 - Stage: validating
 - Ship deadline: 2026-10-20
 - Last check-in: —
-- Blocked on Elliott: nothing
+- Blocked on Elliott: install Xcode (this Mac has only CLT — nothing compiles until then) + SETUP.md steps 1–4 (Firebase console, signing, APNs key)
 
 ## Now / Next / Later
 **Now:**
 - MVP scope v2 (2026-09-20, departments/product.md): daily map moment + archive + ambient live map + who-viewed; hybrid riskiest assumption + pass/fail in venture.md
-- Elliott to confirm backend: Firebase proposed (Auth/Firestore/Storage/Functions+APNs)
-- Slice 1 walking skeleton: two iPhones, live dots on shared map, one push received (days 1–5)
+- Slice 1 walking skeleton: CODE SCAFFOLDED 2026-09-20 (build notes in departments/product.md) — remaining: first compile after Xcode install, then SETUP.md manual steps, then the two-iPhone end-to-end proof (SETUP.md step 5)
 
 **Next:**
 - Slices 2–4: moment loop → archive + who-viewed → instrument (six metric events) + polish floor

@@ -23,3 +23,7 @@ REVISIT WHEN: MVP core-loop decision is made (always-on map vs daily map moment)
 2026-09-20, DECISION: MVP core-loop fork resolved as a hybrid — build the MVP around the daily map moment + archive, with the always-on live map retained as the ambient layer you land in outside moment time. Frame: creating (live map, windows into lives) and sharing (@-location posts, daily memory) memories.
 WHY: Elliott: the moment is the core idea that brings people together, but always-on location is important and stays; the ritual also makes the Always-on grant more palatable than surveillance-first.
 REVISIT WHEN: mvp-scope re-derives the riskiest assumption for the hybrid, OR beta week-4 shows one loop retaining and the other dead weight.
+
+2026-09-20, DECISION: Xcode project managed via XcodeGen (project.yml committed alongside the generated .xcodeproj); Cloud Functions in plain JS (functions v2, Node 22), not TypeScript; GoogleService-Info.plist gitignored, referenced via SETUP.md.
+WHY: Regenerable, diff-reviewable project spec beats hand-merged pbxproj for an agent-driven solo repo; JS drops a build step at 1-function scale; config-out-of-git is standard hygiene.
+REVISIT WHEN: team >1 human, or functions/ grows past ~3 files (move to TS + typed Firestore schemas), or XcodeGen fights an Xcode feature we need.

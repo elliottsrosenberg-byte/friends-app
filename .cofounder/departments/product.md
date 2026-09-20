@@ -2,6 +2,22 @@
 
 ## Log (newest first)
 
+### 2026-09-20 — Slice 1 build notes (walking skeleton scaffolded)
+
+Built exactly slice 1 of scope v2 — nothing from slices 2–5. Repo root now holds the full skeleton:
+
+- **Xcode project:** `project.yml` (XcodeGen spec, committed) → generated `MapMoment.xcodeproj`. iOS 17+, SwiftUI lifecycle, bundle id `com.elliottrosenberg.mapmoment`, Firebase via SPM (`firebase-ios-sdk` 12.x: Auth, Firestore, Messaging, Functions). Regenerate with `xcodegen generate` after adding files outside Xcode.
+- **App** (`MapMoment/`): `AuthService` (Sign in with Apple → Firebase Auth, nonce/SHA256 flow), `GroupStore` (hardcoded single group = the whole `users` collection, live snapshot listener), `LocationService` (When-In-Use → Always two-step upgrade, significant-change monitoring + foreground refresh, 30s publish throttle), `PushService` + `AppDelegate` (APNs → FCM token → user doc), `MapScreen` (iOS 17 Map API, initials avatar dots, deterministic muted per-friend color, "Test ping" button calling the function), `AppModel` orchestrator.
+- **Mock mode:** `--mock` launch arg / `MAPMOMENT_MOCK=1` (DEBUG), and automatic fallback whenever GoogleService-Info.plist is absent — 5 fake friends drifting around the Mission, zero Firebase calls. The Simulator runs the UI with no credentials.
+- **Backend:** `functions/index.js` (JS, functions v2, Node 22) — callable `sendTestPing` fans one push out to every registered device and prunes dead tokens; commented `onSchedule` stub marks where the slice-2 daily moment ping goes. `firestore.rules` (read = any authed member, write = own doc only), `firebase.json`.
+- **Info.plist:** Always-location string written for Guideline 2.5.4 (names the user-visible feature, low-power method, private group, pause-anytime). Background modes: location + remote-notification. `ITSAppUsesNonExemptEncryption` pre-set for TestFlight.
+- **SETUP.md:** literal checklist of the Elliott-only steps (Firebase console, plist download, signing team + capabilities, APNs key, deploy, two-phone test).
+
+**Verified locally:** xcodegen generation clean; all 12 Swift files pass `swiftc -parse`; plists lint; `functions/` `npm install` + module `require()` load clean; pbxproj contains the SPM products/settings as intended.
+**NOT verified (honest):** compilation and running — this Mac has no Xcode.app (Command Line Tools only), so `xcodebuild` for the Simulator is impossible until Elliott installs Xcode (open loop, due 09-23). Expect small compile fixes on first build. Sign in with Apple + push need real devices/accounts regardless (SETUP.md step 5 is the slice-1 exit test).
+
+Decisions worth recording: XcodeGen over hand-rolled pbxproj (regenerable, reviewable diffs); JS over TS for functions (one fewer build step at this size); GoogleService-Info.plist gitignored. REVISIT WHEN team >1 or functions grow past ~3 files (then TS + typed schemas).
+
 ### 2026-09-20 — MVP scope v2 (hybrid loop: daily map moment + ambient live map)
 
 # Friends App — MVP scope (2026-09-20)
