@@ -10,15 +10,19 @@ The fun version of Find My: a social location app for friend groups — FindMy/S
 - ICP (be narrow): Elliott's own friend group first — iPhone-carrying friends who already share Find My locations with each other. Founding beta = real friends, real density.
 - Where they are today (the alternative they'd switch from): Apple Find My (built into iMessage — Apple's distribution advantage), Snap Map inside Snapchat, Life360 (family-skewed utility).
 
-## Feature hypotheses (from Elliott's pitch — to be pruned by validation)
-- Fun-first UI (anti-utility) — the core bet
-- Pings when someone's "spying" on you (checking your location)
-- Smart insights: potential new friends from location patterns
-- "Time travel" — see where people were earlier
-- Invisibility windows: go dark for chunks of time
+## Feature hypotheses (pruned by strategy validation, 2026-09-20 — details in departments/strategy.md)
+- Fun-first UI (anti-utility) — validated by prior art (Zenly, whoo, Jagat) but now table stakes in the category; foundation, not differentiator
+- Spying ping (who checked your location) — KEEP, MVP: proven by Zenly's check-ins feature, App Store-legal
+- Invisibility windows — KEEP, MVP: proven by Zenly Ghost Mode (precise/frozen/blurred); the trust feature that makes Always-on tolerable
+- "Time travel" — RESHAPED: self-only history first (Zenly Footprints precedent); friend-history later, per-friend consent-gated (Life360 precedent)
+- Smart friend insights from location patterns — CUT from MVP: no successful precedent in category, privacy-heavy (stays on Later list)
 
 ## Positioning (Dunford)
-- Not yet run — strategy kickoff research in progress (see departments/strategy.md).
+- Full Dunford not yet run. Competitive-alternative facts (strategy, 2026-09-20):
+  - This idea is effectively a Zenly revival. Zenly: ~40M active users, killed by Snap 2023-02 for making no revenue — desirability proven, viability unproven.
+  - Post-Zenly wave shows demand refills fast: whoo (10M downloads in 3 months, Japan, teen-skewed), Jagat (10M+ users, SE Asia), Bump by amo (the actual Zenly founders, VC-backed, live in 2026).
+  - Incumbents: Find My (Apple default, zero social features as of iOS 26, but Gen Z uses it as social media — Slate 2025-12), Snap Map (~435M MAU inside Snapchat), Life360 (~96M MAU, family-safety positioning).
+  - No API access to Find My friend locations exists for third parties (accessory program is hardware-only; reverse-engineered libs violate Apple ToS) — cold start is total, every friend must install fresh.
 
 ## Offer & revenue model
 - Offer: TBD after validation
@@ -26,9 +30,9 @@ The fun version of Find My: a social location app for friend groups — FindMy/S
 - Value metric: TBD
 
 ## Current riskiest assumption
-- Assumption: TBD — being set by strategy's kickoff research (candidate: "friends will switch their location sharing to a separate non-Apple app for fun features")
-- Smallest test: TBD
-- Pass/fail threshold (pre-committed): TBD
+- Assumption: friends who already share via Find My will move location sharing to a separate app AND still be actively sharing in week 4 (switching + post-novelty retention). Set by strategy 2026-09-20; prior art proves the category for teens/Asia, not for this group.
+- Smallest test: TestFlight beta to Elliott's own friend group; MVP = live map + invisibility windows + spying ping only. Ship by 2026-10-20, measure through week 4.
+- Pass/fail threshold (pre-committed): PASS = ≥8 of ~12 invited friends install and grant Always location in week 1, AND ≥50% of installers still have sharing ON and open the app ≥3 days in week 4. Either miss = FAIL.
 
 ## Current goal
 - Goal: validate the idea against prior art (Zenly, Snap Map, etc.) and get a TestFlight build into the friend group by the deadline.
