@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "cofounder-dashboard",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["/Users/elliottrosenberg/Desktop/Personal/cofounder/ui/server.js"],
+      "port": 4949
+    }
+  ]
+}
