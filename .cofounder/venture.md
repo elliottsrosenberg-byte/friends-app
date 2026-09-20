@@ -12,8 +12,8 @@ The fun version of Find My: a social location app for friend groups — FindMy/S
 
 ## Feature hypotheses (pruned by strategy validation, 2026-09-20 — details in departments/strategy.md)
 - Fun-first UI (anti-utility) — validated by prior art (Zenly, whoo, Jagat) but now table stakes in the category; foundation, not differentiator
-- Spying ping (who checked your location) — KEEP, MVP: proven by Zenly's check-ins feature, App Store-legal
-- Invisibility windows — KEEP, MVP: proven by Zenly Ghost Mode (precise/frozen/blurred); the trust feature that makes Always-on tolerable
+- Spying ping (who checked your location) — KEEP, MVP, **hero feature** (deep-dive 2026-09-20): the only MVP feature Apple won't copy and the only in-category feature with demonstrated willingness-to-pay (whoo charges ¥390/mo for it)
+- Invisibility windows — KEEP, MVP: the trust feature that makes Always-on tolerable — but being commoditized: Apple ships custom-duration + pause-sharing in Find My fall 2026; trust table stakes, not differentiation
 - "Time travel" — RESHAPED: self-only history first (Zenly Footprints precedent); friend-history later, per-friend consent-gated (Life360 precedent)
 - Smart friend insights from location patterns — CUT from MVP: no successful precedent in category, privacy-heavy (stays on Later list)
 
@@ -21,7 +21,9 @@ The fun version of Find My: a social location app for friend groups — FindMy/S
 - Full Dunford not yet run. Competitive-alternative facts (strategy, 2026-09-20):
   - This idea is effectively a Zenly revival. Zenly: ~40M active users, killed by Snap 2023-02 for making no revenue — desirability proven, viability unproven.
   - Post-Zenly wave shows demand refills fast: whoo (10M downloads in 3 months, Japan, teen-skewed), Jagat (10M+ users, SE Asia), Bump by amo (the actual Zenly founders, VC-backed, live in 2026).
-  - Incumbents: Find My (Apple default, zero social features as of iOS 26, but Gen Z uses it as social media — Slate 2025-12), Snap Map (~435M MAU inside Snapchat), Life360 (~96M MAU, family-safety positioning).
+  - Bump reality check (deep-dive 2026-09-20): entirely free, no IAP, no disclosed user numbers; ~7.9M lifetime Android installs (estimate), #38 US Social / #9 FR; $18M seed, no follow-on found, amo consolidating its app portfolio. Alive and shipping daily, but pre-revenue with modest US traction — campus-targeted ("claim your frat or sorority"), not competing for post-college adults.
+  - Incumbents: Find My (Apple default; no social layer, but fall-2026 Find My adds custom-duration + pause-sharing — a native basic invisibility window; Gen Z uses it as social media — Slate 2025-12), Snap Map (~435M MAU inside Snapchat, now an ad surface), Life360 (~98M MAU, family-safety subs $650M+ FY26 run rate + fast-growing map ads).
+  - Unserved slot: post-college 22–30 friend groups — Bump is campus, whoo/Jagat are teens, Life360 is parents. But the wedge must be an adult-native job (coordination, dispersed friends, consent-forward episodic sharing), not a calmer skin; this cohort's real incumbent is free built-in Find My.
   - No API access to Find My friend locations exists for third parties (accessory program is hardware-only; reverse-engineered libs violate Apple ToS) — cold start is total, every friend must install fresh.
 
 ## Offer & revenue model
