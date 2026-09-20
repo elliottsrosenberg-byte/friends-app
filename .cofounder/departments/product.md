@@ -2,6 +2,10 @@
 
 ## Log (newest first)
 
+### 2026-09-20 — Design direction one-pager shipped
+
+`departments/design-direction.md` — the aesthetic contract for slices 2–4 (closes the 09-26 loop). Anti-maximalist, analog/memory-first: paper-neutral palette with one accent (hex tokens, light+dark), SF Pro + New York serif for memory surfaces only, map muted via iOS 17 `MapStyle.StandardEmphasis.muted` (verified real API), moments as bordered near-square prints with deterministic rotation jitter, 4 motion rules, and an explicit anti-Bump NOT list. Friend colors evolve slice 1's continuous-hue formula into a fixed 8-swatch muted table (same deterministic seed); self dot goes `Color.blue` → ink/paper. All slice-1 deltas are one-liners folded into slice-2 work — no redesign pass.
+
 ### 2026-09-20 — Slice 1 build notes (walking skeleton scaffolded)
 
 Built exactly slice 1 of scope v2 — nothing from slices 2–5. Repo root now holds the full skeleton:
