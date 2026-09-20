@@ -1,16 +1,18 @@
 # Status
 
-- Stage: spark
-- Ship deadline: not set
+- Stage: validating
+- Ship deadline: 2026-10-20
 - Last check-in: —
-- Blocked on Elliott: pitch the idea (venture.md one-liner is TBD)
+- Blocked on Elliott: nothing
 
 ## Now / Next / Later
 **Now:**
-- Capture the idea from Elliott (interview), fill venture.md
+- Strategy kickoff research: prior art (Zenly!), assumption map, riskiest assumption + smallest test
 
 **Next:**
-- Strategy kickoff: validate-idea (assumption map, riskiest assumption, smallest test)
+- MVP scope (product) once the riskiest assumption is set
+- Feasibility spike: live location sharing between two iPhones (SwiftUI + backend choice)
 
 **Later (the cut list):**
-- 
+- Smart friend insights from location patterns (privacy-heavy — validate core first)
+- Monetization
