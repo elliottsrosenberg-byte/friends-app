@@ -27,3 +27,7 @@ REVISIT WHEN: mvp-scope re-derives the riskiest assumption for the hybrid, OR be
 2026-09-20, DECISION: Xcode project managed via XcodeGen (project.yml committed alongside the generated .xcodeproj); Cloud Functions in plain JS (functions v2, Node 22), not TypeScript; GoogleService-Info.plist gitignored, referenced via SETUP.md.
 WHY: Regenerable, diff-reviewable project spec beats hand-merged pbxproj for an agent-driven solo repo; JS drops a build step at 1-function scale; config-out-of-git is standard hygiene.
 REVISIT WHEN: team >1 human, or functions/ grows past ~3 files (move to TS + typed Firestore schemas), or XcodeGen fights an Xcode feature we need.
+
+2026-10-13, DECISION: Friends App archived (from validating). Elliott: not working on it right now; Plya is the only active venture. Routines (check-in, pulse, status) skip it; the 10-20 ship date is cleared.
+WHY: Elliott's focus call. The pulse showed the build stalled since 09-20 with SETUP.md and the beta roster weeks overdue; nothing here moves without his hours.
+REVISIT WHEN: Elliott picks it back up — resume at validating, starting with the 12-name roster and SETUP.md steps 1–4.
